@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Exo', sans-serif;
+    background: rgba(20,20,20,1);
+    background: linear-gradient(to top, rgba(213,1,203,1) 2%, rgba(73,73,73,1) 9%, rgba(20,20,20,1) 73%);
+}
+
+.top-border {
+    background-color: rgba(213,1,203,1);
+    clip-path: polygon(70% 0, 0 50%, 0 75%, 100% 0);
+    height: 30%;
+    /* 
+    clip-path: polygon(0 0, 0 100%, 0 75%, 100% 0);
+    x and y axis - starting from top left, top right, bottom right, bottom left */
+}
+
+form {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.animation {
+    animation: formDisappear 2s;
+    animation-fill-mode: forwards;
+}
+
+input {
+    padding: 1em;
+    background: rgba(213,1,203,0.7);
+    color: #fff;
+}
+
+button {
+    padding: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #fffa00;
+    color: #141414;
+    }
+
+input, button {
+    font-family: 'Exo', sans-serif;
+    border: none;
+    border-radius: 30px;
+    margin: 1em;
+    font-size: 1rem;
+    box-shadow: 0 6px 6px -5px rgba(0, 0, 0, 0.6);
+} 
+
+
+input:focus {
+    background-color: rgba(213,1,203,1);
+    color: #fff;
+    box-shadow: none;
+}
+
+button:focus,
+button:hover {
+    background: rgb(250, 200, 20);
+    color: #000;
+}
+
+button:active {
+    transform: translateY(0.2em);
+    box-shadow: 0 4px 2px -5px rgba(0, 0, 0, 0.8);
+    }
+
+::placeholder {
+    letter-spacing: 2px;
+    opacity: 0.6;
+    color: #fff;
+}
+
+.form-success {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.thanks {
+    font-size: 2rem;
+    color: #fffa00;
+    font-weight: 700;
+}
+
+.email {
+    margin-top: 0.5em;
+}
+
+@media (min-width: 600px) {
+    
+    form {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    input,button {
+        border-radius: 20px;
+    }
+    
+    button {
+        padding: 1em 3em;
+    }
+}
+
+@keyframes formDisappear {
+    0% {
+        opacity: 1;
+    }
+  
+    50% {
+        opacity: .5;
+    }
+    
+    100% {
+        opacity: 0;
+        transform: translateY(-2em);
+        visibility: hidden;
+    }
+}

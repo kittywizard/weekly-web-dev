@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: url('/img/clock-bg.jpg');
+    background-image: url('/img/clock-bg.jpg'), linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.5) 50%, rgba(252,176,69,0.5) 100%);
+    height: 100vh;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.container {
+    background-color: rgba(0, 0 , 0, 0.4);
+    margin: 2em auto;
+    width: 75vw;
+    height: 75vh;
+    padding: 1.5em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+input, button {
+    border: none;
+    background: #ccc;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 0.75em;
+    margin: 0 0.5em;
+    
+}
+
+button {
+    padding: 0.75em 2em;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.results {
+    display: none;
+}

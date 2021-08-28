@@ -4,35 +4,31 @@
 }
 
 .container {
-    
-}
-/* 
-
-.container {
-    background: hotpink;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 
 .adviceEye {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
+    background-color: lightgreen;
+    content: '';
     border-radius: 50%;
-    background: lightblue;
-    text-align: center;
+    margin: 2em;
     padding: 0.5em;
     position: relative;
+
 }
 
 p {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   font-weight: 700;
-   transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 700;
+    transform: translate(-50%, -50%);
 }
 
 button {
@@ -44,4 +40,4 @@ button {
 
 button:hover {
     cursor: pointer;
-} */
+} 

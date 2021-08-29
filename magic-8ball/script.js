@@ -17,7 +17,7 @@ const answers = [
     "I wouldn't, if I were you",
     "Hmmmm, nah",
     "Do it!"
-]
+];
 
 advBtn.addEventListener('click', () => {
     let userQuestion = document.getElementById('userQuestion').value;
@@ -40,3 +40,4 @@ function addAdvice(question, adv) {
 
 //write function to:
     // animation?
+    //limit after a certain number of questions have been asked

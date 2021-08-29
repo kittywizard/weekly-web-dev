@@ -35,7 +35,22 @@
     transform: translate(-50%, -50%);
     color: #fff;
     padding: 2.5em;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+}
+
+.triangle {
+    background-color: darkblue;
+    content: '';
+    clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+    padding: 3em;
+        /* x and y axis - starting from top left, top right, bottom right, bottom left */
+    /* transition: all 2s; */
+    transform: rotate(180deg);
+
+    /* 
+    problem: clip path removes stuff from outside the triangle - need to create triangle the old fashioned way
+    google css triangle, apply that to the advice display?? see if it works properly
+    */
 }
 
 p {
@@ -65,4 +80,15 @@ button:hover {
 
 .input {
     background: darkgray;
+}
+
+@keyframes rotateTriangle {
+    0% {
+
+    }
+
+    100% {
+
+    }
+
 }

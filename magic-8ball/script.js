@@ -32,7 +32,7 @@ advBtn.addEventListener('click', () => {
 
 function addAdvice(question, adv) {
     let randomNum = Math.floor(Math.random() * adv.length);
-    advDisplay.style.backgroundColor = 'darkblue'; //so it doesn't show before you click the button
+    //advDisplay.style.backgroundColor = 'darkblue'; //so it doesn't show before you click the button
     advDisplay.textContent = adv[randomNum];
 
     questionDisplay.textContent = question;

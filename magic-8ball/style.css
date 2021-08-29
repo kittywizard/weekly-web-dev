@@ -50,10 +50,10 @@ button,
     width: 40%;
     content: '';
     clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+        /* x and y axis - starting from top left, top right, bottom right, bottom left */
     transform: rotate(180deg);
     padding: 2.5em;
     background-color: darkblue;
-    /* x and y axis - starting from top left, top right, bottom right, bottom left */
 }
 
 p {

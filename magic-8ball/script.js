@@ -1,5 +1,3 @@
-console.log('test');
-
 const advBtn = document.getElementById('adviceBtn');
 const advDisplay = document.getElementById('adviceDisplay');
 
@@ -12,12 +10,15 @@ const advice = [
     "You know what the trouble about real life is? There's no danger music."
 ];
 
-advBtn.addEventListener('click', () => {
-    advDisplay.textContent = advice[0];
-});
+advBtn.addEventListener('click', () => addAdvice(advice));
+
+function addAdvice(adv) {
+    let randomNum = Math.floor(Math.random() * advice.length);
+    advDisplay.style.backgroundColor = 'darkblue'; //so it doesn't show before you click the button
+    advDisplay.textContent = adv[randomNum];
+}
 
 //write function to:
-    // randomly generate a number that is advice.length
-    // display it in the p
     // generate random color background
     // animation?
+    //user input

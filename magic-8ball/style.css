@@ -13,21 +13,19 @@
         align-items: center;
 }
 
-.container, button {
-            font-family: 'Source Sans Pro',
-            sans-serif;
+.container, button, .input {
+            font-family: 'Source Sans Pro', sans-serif;
 }
 
 .adviceEye {
     width: 500px;
     height: 500px;
-    background-color: lightgreen;
+    background-color: #000;
     content: '';
     border-radius: 50%;
     margin: 2em;
     padding: 0.5em;
     position: relative;
-
 }
 
 p {
@@ -38,15 +36,13 @@ p {
     font-size: 1.5rem;
     text-align: center;
     transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 2.5em;
+    border-radius: 50%;
+
 }
 
 button {
-    border: none;
-    padding: 0.5em 1em;
-    margin: 1em;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.2;
 }
@@ -54,3 +50,16 @@ button {
 button:hover {
     cursor: pointer;
 } 
+
+.input, button {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    margin: 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+.input {
+    background: darkgray;
+}

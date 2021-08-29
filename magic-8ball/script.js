@@ -1,5 +1,6 @@
 const advBtn = document.getElementById('adviceBtn');
 const advDisplay = document.getElementById('adviceDisplay');
+const questionDisplay = document.getElementById('questionDisplay');
 
 const advice = [
     "If you’re good at something, never do it for free.",
@@ -10,15 +11,32 @@ const advice = [
     "You know what the trouble about real life is? There's no danger music."
 ];
 
-advBtn.addEventListener('click', () => addAdvice(advice));
+const answers = [
+    "Yes",
+    "No",
+    "I wouldn't, if I were you",
+    "Hmmmm, nah",
+    "Do it!"
+]
 
-function addAdvice(adv) {
-    let randomNum = Math.floor(Math.random() * advice.length);
+advBtn.addEventListener('click', () => {
+    let userQuestion = document.getElementById('userQuestion').value;
+        //check for user input
+        if (userQuestion !== '') {
+            addAdvice(userQuestion, answers)
+        } else {
+            addAdvice(userQuestion, advice)
+        }
+
+});
+
+function addAdvice(question, adv) {
+    let randomNum = Math.floor(Math.random() * adv.length);
     advDisplay.style.backgroundColor = 'darkblue'; //so it doesn't show before you click the button
     advDisplay.textContent = adv[randomNum];
+
+    questionDisplay.textContent = question;
 }
 
 //write function to:
-    // generate random color background
     // animation?
-    //user input

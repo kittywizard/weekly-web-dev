@@ -28,18 +28,21 @@
     position: relative;
 }
 
-p {
+#adviceDisplay {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-align: center;
     transform: translate(-50%, -50%);
     color: #fff;
     padding: 2.5em;
     border-radius: 50%;
+}
 
+p {
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 0 auto;
 }
 
 button {

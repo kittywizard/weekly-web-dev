@@ -2,6 +2,8 @@ const advBtn = document.getElementById('adviceBtn');
 const advDisplay = document.getElementById('adviceDisplay');
 const questionDisplay = document.getElementById('questionDisplay');
 
+let numQuestions = 0;
+
 const advice = [
     "If you’re good at something, never do it for free.",
     "Do, or do not. There is no try.",
@@ -20,6 +22,7 @@ const answers = [
 ];
 
 advBtn.addEventListener('click', () => {
+    numQuestions++;
     let userQuestion = document.getElementById('userQuestion').value;
         //check for user input
         if (userQuestion !== '') {

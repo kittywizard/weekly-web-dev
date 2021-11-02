@@ -7,17 +7,17 @@ function TextBox(){
         </div>
     )
 }
-
 const wordCount = document.getElementById('wordCount');
-console.log(wordCount)
-//wordCount.addEventListener('keypress', findWordCount);
 
-function findWordCount() {
+wordCount.addEventListener('keydown', findWordCount);
+
+function findWordCount(key) {
     //check each keypress for a space - return \.
     // preceded by either a letter, period, quotation, parathensis.. etc?
         //run further check on anything non-letter 
     
-    console.log('key pressed')
+    console.log(key.code)
+    
 }
 
 export default TextBox;

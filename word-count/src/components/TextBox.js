@@ -8,20 +8,27 @@ function TextBox(){
     )
 }
 let words = 0;
-let letters = 0;
 let keys = [];
+const regex  = new RegExp('[a-z]');
 
 function findWordCount(key) {
     keys.push(key.key); //pushing each press into an array so we can check it ?
-    letters++;
-    
+
     if(key.code === "Space") {
+        console.log(keys[keys.length - 2]);
+
+        if(regex.test(keys[keys.length - 2])) {
+            
+            //compare ^^ that to a regex expression that checks for :
+                //letters, period, quotation marks etc
+            //if it checks out, increment words
+            words++;
+            console.log(words)
+            //update display
+        }
         
-        //check to see what the preceding key was - see the array
     }
-    words++;
     
-    console.log(key.code + " " + words)
 
     
 }

@@ -7,14 +7,22 @@ function TextBox(){
         </div>
     )
 }
+let words = 0;
+let letters = 0;
+let keys = [];
 
 function findWordCount(key) {
-    //check each keypress for a space - return \.
-    // preceded by either a letter, period, quotation, parathensis.. etc?
-        //run further check on anything non-letter 
+    keys.push(key.key); //pushing each press into an array so we can check it ?
+    letters++;
     
-    console.log("testing" + key.code)
+    if(key.code === "Space") {
+        
+        //check to see what the preceding key was - see the array
+    }
+    words++;
     
+    console.log(key.code + " " + words)
+
     
 }
 

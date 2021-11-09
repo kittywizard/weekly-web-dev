@@ -2,7 +2,7 @@
 
 function NumberDisplay(props) {
     return (
-        <div className="num"></div>
+        <div className="num" id="words"></div>
     )
 }
 

@@ -1,0 +1,24 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: rgba(185, 214, 255, 0.959);
+    padding: 1em;
+    border-radius: 15px;
+}
+
+h1 {
+    color: rgba(5,79,184,0.95);
+    margin-top: 0;
+    text-align: center;
+}
+
+.centered {
+    width: 60%;
+    margin: 0 auto;
+}

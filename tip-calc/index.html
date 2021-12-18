@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <section class="container">
+        <h3>Tip Calculator</h3>
+        <form action="#" method="POST" id="tipCalc">
+            <input aria-label="check amount" name="checkAmount" type="number" placeholder="Check Amount" step="0.01" min="1" required>
+                <input type="radio" name="tipAmount" id="tip15" value="15">
+                <label for="tip15">15%</label>
+                <input type="radio" name="tipAmount" id="tip18" value="18">
+                <label for="tip18">18%</label>
+                <input type="radio" name="tipAmount" id="tip20" value="20">
+                <label for="tip20">20%</label>
+            <label for="tipAmount">Tip %:</label>
+            <input type="number" name="customTip" placeholder="Custom Tip %" min="1">
+            <button class="btn" id="submitBtn">Submit</button>
+        </form>
+        <!-- <button class="btn" id="15percent">15%</button>
+        <button class="btn" id="18percent">18%</button>
+        <button class="btn" id="20percent">20%</button> -->
+        <div class="results hide">
+            
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
